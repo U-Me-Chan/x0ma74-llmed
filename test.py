@@ -3,8 +3,8 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 from peft import PeftModel  # Используем PeftModel для загрузки адаптера
 
 # Указываем имя базовой модели и путь к чекпоинту с адаптером
-base_model_name = "TheBloke/openbuddy-mistral-7B-v13-GPTQ"
-checkpoint_path = "./mistral-finetuned/checkpoint-12"
+base_model_name = "OpenBuddy/openbuddy-mistral-7b-v13"
+checkpoint_path = "./stage-2-merged-model/checkpoint-12"
 
 # Загружаем токенизатор из базовой модели
 tokenizer = AutoTokenizer.from_pretrained(base_model_name)
