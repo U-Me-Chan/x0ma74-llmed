@@ -3,7 +3,7 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 from peft import PeftModel
 
 print("Укажите имя базовой модели и путь к дообученному чекпоинту адаптера")
-base_model_name = "t-tech/T-lite-it-1.0"
+base_model_name = "TheBloke/openbuddy-mistral-7B-v13-GPTQ"
 checkpoint_path = "./stage-1-finetuned/checkpoint-12"
 
 print("Загружаем токенизатор из базовой модели")
