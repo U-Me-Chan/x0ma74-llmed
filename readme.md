@@ -5,7 +5,7 @@
 
 1. clone this repo
 ```sh
-git clone https://github.com/kugimiya/x0ma74-llmed
+git clone https://github.com/U-Me-Chan/x0ma74-llmed
 ```
 
 2. cd into and clone llama.cpp repo
