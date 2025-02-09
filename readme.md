@@ -16,7 +16,7 @@ git clone https://github.com/ggerganov/llama.cpp
 
 3. install python deps
 ```sh
-pip3 install torch transformers peft numpy datasets safetensors tokenizers sentencepiece
+pip3 install torch transformers peft numpy datasets safetensors tokenizers sentencepiece --break-system-packages
 ```
 
 4. convert raw x0ma74's text from `raw_texts.txt` into dataset
