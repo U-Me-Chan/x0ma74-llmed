@@ -1,0 +1,7 @@
+stage-*
+x0ma74_GGUF_Q8_0.gguf
+.ropeproject
+llama.cpp
+merged-model
+mistral-finetuned
+dataset.jsonl
