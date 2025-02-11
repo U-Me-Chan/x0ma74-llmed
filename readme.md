@@ -1,6 +1,12 @@
 # xoma74 llm'ed project
 ## Штука, чтобы обхитрить Хому
 
+### ready to use
+
+1. visit https://huggingface.co/kugichka/x0ma74
+2. download gguf model
+3. run this model with llama.cpp or lm studio
+
 ### how to
 
 1. clone this repo
