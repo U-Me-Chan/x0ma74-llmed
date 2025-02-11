@@ -4,7 +4,7 @@ from peft import PeftModel  # Используем PeftModel для загруз
 
 # Указываем имя базовой модели и путь к чекпоинту с адаптером
 base_model_name = "OpenBuddy/openbuddy-mistral-7b-v13"
-checkpoint_path = "./stage-2-merged-model/checkpoint-12"
+checkpoint_path = "./stage-2-merged-model/checkpoint-230"
 
 # Загружаем токенизатор из базовой модели
 tokenizer = AutoTokenizer.from_pretrained(base_model_name)

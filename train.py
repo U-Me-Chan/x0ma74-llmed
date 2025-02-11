@@ -48,8 +48,8 @@ data_collator = DataCollatorForLanguageModeling(tokenizer=tokenizer, mlm=False)
 
 # 🔹 Настройка LoRA
 lora_config = LoraConfig(
-    r=12,                 # default: 8
-    lora_alpha=20,        # default: 16
+    r=16,                 # default: 8
+    lora_alpha=26,        # default: 16
     target_modules=["q_proj", "v_proj"],
     lora_dropout=0.05,
     bias="all",           # default: none
@@ -62,7 +62,7 @@ training_args = TrainingArguments(
     output_dir="./stage-1-finetuned",
     per_device_train_batch_size=1,             # уменьшенный размер батча для Mac
     gradient_accumulation_steps=8,             # имитируем больший батч
-    num_train_epochs=3,
+    num_train_epochs=5,
     save_steps=500,
     logging_dir="./logs",
     fp16=False,                              # на Mac fp16 может давать ошибки; используем bf16
